@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <title> 🧮 Calculator</title>
+</head>
+
+<body>
+    <div class ="title"><h1>🧮 Calculator</h1></div>
+    <div class="flex-container">
+        <div class="calculator" id="calculator">
+        <input type= "text" id="display" placeholder="0">
+            <!--row 1 of calc-->
+            <button onclick="clr()" class = "command"  id="clear" type="button">AC</button>
+            <button onclick="del()" class = "command"  id="backspace" type="button">&#8592</button>
+            <button onclick="calculate('%')" class = "operator" id="remainder" type="button">%</button>
+            <button onclick="calculate('/')" class = "operator"  id="divide" type="button">/</button>
+            <!--row 2 of calc-->
+            <button onclick="calculate('7')" class = "digit"  id="seven" type="button">7</button>
+            <button onclick="calculate('8')" class = "digit"  id="eight" type="button">8</button>
+            <button onclick="calculate('9')" class = "digit"  id="9" type="button">9</button>
+            <button onclick="calculate('*')" class = "operator" id="multiply" type="button">*</button>
+            <!--row 3 of calc-->
+            <button onclick="calculate('4')" class = "digit"  id="four" type="button">4</button>
+            <button onclick="calculate('5')" class = "digit"  id="five" type="button">5</button>
+            <button onclick="calculate('6')" class = "digit"  id="six" type="button">6</button>
+            <button onclick="calculate('-')" class = "operator" id="subtract" type="button">-</button>
+            <!--row 4 of calc-->
+            <button onclick="calculate('1')" class = "digit"  id="one" type="button">1</button>
+            <button onclick="calculate('2')" class = "digit"  id="two" type="button">2</button>
+            <button onclick="calculate('3')" class = "digit"  id="three" type="button">3</button>
+            <button onclick="calculate('+')" class = "operator" id="add" type="button">+</button>
+            <!--row 5 of calc-->
+            <button onclick="calculate('0')" class = "digit"  id="zero" type="button">0</button>
+            <button onclick="calculate('.')" class = "decimal"  id="decimal" type="button">.</button>
+            <button onclick="getResult('=')" class = "equals" id="equals" type="button">=</button>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>
